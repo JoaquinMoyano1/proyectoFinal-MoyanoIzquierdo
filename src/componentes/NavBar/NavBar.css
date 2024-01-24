@@ -1,0 +1,39 @@
+.NavLink {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: #00f;
+    font-size: 16px;
+  }
+  
+  .NavLink:hover {
+    color: #0cf;
+  }
+  
+  header {
+    background-color: #cfcfcf;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  h1 {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(48, 48, 243);
+    text-decoration: none;
+    font-size: 24px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  .imgLogo {
+    width: 100px;
+  }

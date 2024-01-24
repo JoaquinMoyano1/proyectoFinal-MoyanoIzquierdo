@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardProducto {
+    background-color: rgba(204, 204, 204, 0.74);
+    border-radius: 10px;
+    width: 15rem;
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+}
+
+.cardProducto img {
+    width: 150px;
+}
