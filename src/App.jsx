@@ -1,23 +1,28 @@
 import React from 'react';
-import ItemCount from './componentes/ItemCount/ItemCount';
 import NavBar from './componentes/NavBar/NavBar';
 import ItemListContainer from './componentes/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './componentes/ItemDetailContainer/ItemDetailContainer';
 import './App.css';
-
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+//IMportamos nuestro proovesor de contexto
+import { CarritoProvider } from './context/CarritoContext';
+//Envuelvan la aplicacion con el carritoProvider
+import Cart from './componentes/Cart/Cart';
+
 
 const App = () => {
   return (
     <>
       <BrowserRouter>
-        <NavBar />
-        <Routes>
-          <Route path='/' element={ <ItemListContainer /> } />
-          <Route path='/categoria/:idCategoria' element={ <ItemListContainer /> } />
-          <Route path='/item/:idItem' element={ <ItemDetailContainer /> } />
-          <Route path='/cart' element = {<h2>Carrito en Breve!</h2>} />
-        </Routes>
+        <CarritoProvider>
+          <NavBar />
+          <Routes>
+            <Route path='/' element={<ItemListContainer />} />
+            <Route path='/categoria/:idCategoria' element={<ItemListContainer />} />
+            <Route path='/item/:idItem' element={<ItemDetailContainer />} />
+            <Route path='/cart' element={<Cart/>} />
+          </Routes>
+        </CarritoProvider>
       </BrowserRouter>
     </>
   )

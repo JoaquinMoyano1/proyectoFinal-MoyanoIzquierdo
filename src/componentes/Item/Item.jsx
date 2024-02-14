@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Item = ({id, nombre, precio, img}) => {
   return (
-    <div class="container">
+    <div className="container">
 
     
     <div className='cardProducto'>
