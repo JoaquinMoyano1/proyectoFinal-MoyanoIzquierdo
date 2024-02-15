@@ -4,6 +4,7 @@ import { useState, useContext } from "react";
 import { CarritoContext } from "../../context/CarritoContext";
 import { db } from "../../services/config";
 import { collection, addDoc  } from "firebase/firestore";
+import Swal from "sweetalert2";
 
 const Checkout = () => {
     const { carrito, vaciarCarrito, total } = useContext(CarritoContext);
@@ -53,6 +54,19 @@ const Checkout = () => {
             .then(docRef => {
                 setOrdenId(docRef.id);
                 vaciarCarrito();
+
+                //limpiar los campos del formulario
+                setNombre("");
+                setApellido("")
+                setTelefono("")
+                setEmail("")
+                setEmailConfirmacion("")
+                //Mostrar la id con la alerta de sweetalert
+                Swal.fire({
+                    title: "¡Orden generada!",
+                    text: `Tu codigo de compra es: ${docRef.id}`,
+                    icon: "success"
+                })
             })
             .catch(error => {
                 console.log("Error al crear la orden compra", error);

@@ -10,6 +10,8 @@ import { CarritoProvider } from './context/CarritoContext';
 import Cart from './componentes/Cart/Cart';
 import Checkout from './componentes/Checkout/Checkout';
 
+
+
 const App = () => {
   return (
     <>
@@ -25,6 +27,7 @@ const App = () => {
           </Routes>
         </CarritoProvider>
       </BrowserRouter>
+      
     </>
   )
 }
