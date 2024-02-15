@@ -1,11 +1,50 @@
 .contenedorItem {
     text-align: center;
-    border: 1px solid black;
-    margin: 3rem;
-    background-color: rgba(255, 255, 255, 0.8); 
-    color: black; 
-}
+    background: linear-gradient(to bottom, #ffffff, #a7a7a7); /* Degradado de gris */
+  padding: 20px;
+  }
+  
+  .contenedorItem img {
+    max-width: 500px;
+    transition: transform 0.5s ease;
+  }
 
-img {
-    width: 20rem;
-}
+  .contenedorItem img:hover {
+    transform: scale(1.25); 
+  }
+
+  .nombreProducto {
+    font-size: 50px;
+    font-weight: bold; 
+    margin-bottom: 10px;
+  }
+  
+  .precio {
+    font-size: 50px;
+    font-weight: bold; 
+    font-style: italic; 
+  }
+  .descripcion {
+    font-size: 30px;
+    font-weight: bold; 
+    font-style: italic; 
+  }
+
+  .stock {
+    font-size: 14px; 
+  }
+
+  .contenedorItem .btn {
+    width: 100%;
+    background-color: black;
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: none;
+    border-radius: 5px; 
+    margin-top: 10px; 
+  }
+  
+  .contenedorItem .btn:hover {
+    background-color: rgb(250, 250, 250);
+    color: black;
+  }

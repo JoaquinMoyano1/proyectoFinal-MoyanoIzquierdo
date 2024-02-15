@@ -7,22 +7,23 @@ import './NavBar.css';
 
 const NavBar = () => {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
+    <Navbar collapseOnSelect expand="lg" variant="dark" className="navbar-custom">
+      
       <Container>
-        <Link to="/" className="navbar-brand">
-          <img className='imgLogo' src="./img/randombull.png" alt="logo" />
-        </Link>
-
+      <Link to="/" className="navbar-brand">
+        <img className='imgLogo' src="./img/LOGO-BANNER.png" alt="logo" />
+      </Link>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <NavLink to="/categoria/3" className="nav-link">fitisios</NavLink>
-            <NavLink to="/categoria/2" className="nav-link">reales</NavLink>
+            <NavLink to="/categoria/3" className="nav-link"> GLITTER</NavLink>
+            <NavLink to="/categoria/1" className="nav-link"> COMBOS </NavLink>
+            <NavLink to="/categoria/2" className="nav-link"> SERVICIOS </NavLink>
           </Nav>
         </Navbar.Collapse>
         <CartWidget />
       </Container>
-      
+
     </Navbar>
   )
 }
@@ -30,41 +31,6 @@ const NavBar = () => {
 export default NavBar;
 
 
- {/*
-import CartWidget from '../CartWidget/CartWidget';
-import './NavBar.css';
-import {Link, NavLink} from "react-router-dom";
 
-const NavBar = () => {
-  return (
-    <header>
-      <Link to="/">
-        <img className='imgLogo' src="./img/randombull.png" alt="logo" />
-      </Link>
 
-        <nav>
-            <ul>
 
-                <li>
-                  <NavLink to="/categoria/3">
-                    fitisios
-                  </NavLink>
-                </li>
-
-                <li>
-                  <NavLink to="/categoria/2">
-                    reales
-                  </NavLink>
-                </li>
-
-            </ul>
-        </nav>
-        
-        <CartWidget/>
-
-    </header>
-  )
-}
-
-export default NavBar
-*/}

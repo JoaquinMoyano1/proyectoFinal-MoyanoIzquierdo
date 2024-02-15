@@ -1,0 +1,15 @@
+
+.accordion-item {
+    margin-bottom: 10px; /* Ajusta el valor según sea necesario */
+  }
+
+  .card-price {
+    font-size: 25px;
+    font-weight: bold; 
+  font-style: italic; 
+  }
+
+  .accordion-button {
+    background-color:rgba(139, 139, 139, 0.842);
+    color: black;
+  }

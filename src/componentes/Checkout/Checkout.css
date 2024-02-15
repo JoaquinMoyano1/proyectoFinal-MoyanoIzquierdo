@@ -1,0 +1,29 @@
+.checkout-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.checkout-content {
+    max-width: 600px; /* Cambia este valor según el ancho máximo deseado */
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-content h2 {
+    margin-bottom: 20px;
+}
+
+.swal2-popup {
+    background-color: #000 !important;
+}
+
+
+.swal2-popup p, .swal2-popup label {
+    color: #fff !important;
+}
+

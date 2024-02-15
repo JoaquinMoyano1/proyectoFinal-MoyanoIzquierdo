@@ -6,11 +6,11 @@ import './CartWidget.css';
 const CartWidget = () => {
     const { cantidadTotal } = useContext(CarritoContext);
     return (
-        <div>
+        <div className="cart-widget">
             <Link to="/cart">
-                <img className='imgCarrito' src="../img/carrito.png" alt="Carrito" />
+                <img className="cart-icon" src="../img/carrito.png" alt="Carrito" />
                 {
-                    cantidadTotal > 0 && <strong> {cantidadTotal} </strong>
+                    cantidadTotal > 0 && <strong className="cart-number"> {cantidadTotal} </strong>
                 }        
             </Link>
         </div>

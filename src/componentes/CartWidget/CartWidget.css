@@ -1,3 +1,19 @@
-.imgCarrito {
+.cart-icon {
     width: 50px;
 }
+
+.cart-widget {
+    position: relative; 
+    display: inline-block; 
+  }
+  
+  .cart-widget strong {
+    position: absolute; 
+    top: -5px; 
+    right: -5px; 
+    background-color: rgba(255, 217, 0, 0.76); 
+    color: black; 
+    padding: 2px 5px; 
+    border-radius: 3px; 
+    text-decoration: none; 
+  }

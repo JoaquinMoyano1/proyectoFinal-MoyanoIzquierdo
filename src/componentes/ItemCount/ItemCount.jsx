@@ -1,5 +1,6 @@
 import { useState } from "react";
-
+import Button from 'react-bootstrap/Button';
+import ButtonGroup from 'react-bootstrap/ButtonGroup';
 
 const ItemCount = ({inicial, stock, funcionAgregar }) => {
 
@@ -20,15 +21,15 @@ const ItemCount = ({inicial, stock, funcionAgregar }) => {
 
 
   return (
-    <>
-    <div>
-        <button onClick={decrementar}> - </button>
-        <p> {contador} </p>
-        <button onClick={incrementar}> + </button>
-    </div>
-      <button onClick={() => funcionAgregar(contador)}> Agregar al Carrito </button>
-    </>
-  )
+        <>
+            <ButtonGroup aria-label="Cantidad">
+                <Button variant="secondary" onClick={decrementar}>-</Button>
+                <Button variant="secondary">{contador}</Button>
+                <Button variant="secondary" onClick={incrementar}>+</Button>
+            </ButtonGroup>
+            <Button variant="primary" onClick={() => funcionAgregar(contador)}>Agregar al Carrito</Button>
+        </>
+    );
 }
 
-export default ItemCount
+export default ItemCount 

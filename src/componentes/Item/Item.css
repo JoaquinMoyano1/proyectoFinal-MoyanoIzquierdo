@@ -1,21 +1,40 @@
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .cardProducto {
-    background-color: rgba(204, 204, 204, 0.74);
-    border-radius: 10px;
-    width: 15rem;
-    padding: 1rem;
-    margin: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: black;
-}
+    text-align: center;
+    background-color: silver; /* Color de fondo plateado */
+    border-radius: 15px; 
+    margin: 20px; 
+    transition: transform 0.3s ease;
+  }
 
-.cardProducto img {
-    width: 150px;
-}
+  .cardProducto:hover {
+    transform: scale(1.05); /* Aumenta el tamaño al pasar el cursor */
+  }
+  
+  
+  .cardProducto img {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .cardProducto .card-title {
+    margin-bottom: 10px;
+  }
+  
+  .cardProducto .card-text {
+    margin-bottom: 15px;
+  }
+  
+  .cardProducto .btn {
+    width: 100%;
+    background-color: black; /* Color de fondo negro brillante */
+    color: white; /* Color de fuente blanco */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave del color de fondo y de la fuente */
+  }
+  
+  .cardProducto .btn:hover {
+    background-color: silver; /* Cambio de color al pasar el cursor */
+    color: black; /* Cambio de color de la fuente al pasar el cursor */
+  }
