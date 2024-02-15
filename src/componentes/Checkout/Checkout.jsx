@@ -3,7 +3,7 @@
 import { useState, useContext } from "react";
 import { CarritoContext } from "../../context/CarritoContext";
 import { db } from "../../services/config";
-import { collection, addDoc } from "firebase/firestore";
+import { collection, addDoc  } from "firebase/firestore";
 
 const Checkout = () => {
     const { carrito, vaciarCarrito, total } = useContext(CarritoContext);
